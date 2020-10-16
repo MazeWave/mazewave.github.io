@@ -9,6 +9,7 @@
 
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/fontawesome.min.css" rel="stylesheet" />
+    <link href="assets/css/twemoji-amazing.css" rel="stylesheet" />
     <link href="assets/css/main.css" rel="stylesheet" />
     <style>
       header {
@@ -18,6 +19,10 @@
         right: 0;
       }
     </style>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
   </head>
   <body>
     <div class="mx-auto">
@@ -27,28 +32,41 @@
           <nav class="nav nav-masthead justify-content-center">
             <a class="nav-link" href="/">Home</a>
             <a class="nav-link active" href="vanilla-raytraced.html">Vanilla Raytraced</a>
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" id="language" data-toggle="dropdown"><i class="fas fa-language"></i></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#"><i class="twa twa-flag-united-kingdom"></i>English</a>
+                <a class="dropdown-item" href="#"><i class="twa twa-flag-france"></i>Français</a>
+              </div>
+            </div>
           </nav>
         </div>
       </header>
       <main role="main">
         <div class="d-flex flex-column w-100" style="justify-content: center; color: var(--white); height: 100vh">
-          <div class="fullscreen-image" style="background-image: url('assets/img/index/background.jpg')"></div>
+          <div class="fullscreen-image" style="background-image: url('assets/img/vanilla-raytraced/fault.jpg')"></div>
           <div class="text-center">
-            <img src="https://raw.githubusercontent.com/MazeWave/Vanilla-Raytraced/master/Vanilla%20Raytraced/pack_icon.png" href="#" style="height: 250px; border-radius: 5%;"/>
+            <img src="assets/img/vanilla-raytraced/icon.png" href="#" style="height: 250px; border-radius: 5%" />
             <h1>Vanilla Raytraced</h1>
             <p class="lead">Adds PBR resources to Minecraft</p>
             <p class="lead">
               <a href="https://github.com/MazeWave/Vanilla-Raytraced" class="btn btn-lg btn-dark"><i class="fab fa-github"></i>Github</a>
+              <a href="https://github.com/MazeWave/Vanilla-Raytraced/releases/latest" class="btn btn-lg btn-secondary"><i class="fas fa-download"></i>Download</a>
             </p>
           </div>
         </div>
 
         <content class="p-3 my-3 d-block">
           <div class="panel">
-            <h3>PBR Resources for Minecraft</h3>
-            <p><b>Vanilla Raytraced</b> provides reflections, roughness, emissive light to your world with the same original look of Minecraft, but in better.</p>
-            <p>This resource pack only works on NVIDIA RTX cards.</p>
-            <div class="alert alert-warning" role="alert"><i class="fas fa-exclamation-triangle"></i>This version of the pack is still in <b>early developpement</b>. You can deal with bugs while playing the game.</div>
+            <p class="description">
+              Vanilla Raytraced is a resource pack for <b>Minecraft Windows 10 edition</b> that adds PBR resources. This pack aims to remain as faithful as possible to
+              the vanilla version of Minecraft. It will therefore allow you to take advantage of the full potential of the raytracing without denaturing Minecraft.
+            </p>
+
+            <div class="alert alert-warning" role="alert">
+              <i class="fas fa-exclamation-triangle"></i>This version of the pack is still in <b>early development</b>. Although it has been tested throughout its production, it
+              is not excluded that you may encounter bugs while using it.
+            </div>
           </div>
         </content>
       </main>
