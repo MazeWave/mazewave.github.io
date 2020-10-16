@@ -9,34 +9,51 @@
 
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/fontawesome.min.css" rel="stylesheet" />
+    <link href="assets/css/twemoji-amazing.css" rel="stylesheet" />
     <link href="assets/css/main.css" rel="stylesheet" />
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/js.cookie.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
   </head>
-  <body class="text-center">
-    <div class="fullscreen-image" style="background-image: url('assets/img/index/background.jpg')"></div>
-    <div class="d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <header class="masthead mb-auto">
-        <div class="inner">
-          <h3 class="masthead-brand"><a href="https://mazewave.github.io">MazeWave</a></h3>
-          <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="/">Home</a>
-            <a class="nav-link" href="vanilla-raytraced.html">Vanilla Raytraced</a>
-          </nav>
-        </div>
-      </header>
 
-      <main role="main">
-        <h1>MazeWave</h1>
-        <p class="lead">Designer in his spare time</p>
-        <p class="lead">
-          <a href="https://github.com/MazeWave" class="btn btn-lg btn-dark"><i class="fab fa-github"></i>Github</a>
-        </p>
-      </main>
-
-      <footer class="mt-auto text-center">
-        <div class="inner">
-          <p>This website was made by <a href="https://github.com/06Games">Evan Galli</a></p>
+  <div class="mx-auto">
+    <header class="p-3 masthead mb-auto scrolled" style="color: var(--white)">
+      <div class="inner">
+        <h3 class="masthead-brand" id="txt-mazewave"><a href="https://mazewave.github.io">MazeWave</a></h3>
+        <nav class="nav nav-masthead justify-content-center">
+          <a class="nav-link" href="/" id="txt-home">Home</a>
+          <a class="nav-link active" href="vanilla-raytraced.html" id="txt-vrp">Vanilla Raytraced</a>
+          <div class="dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" id="language" data-toggle="dropdown"><i class="fas fa-language"></i></a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="javascript:changeLanguage('english')"><i class="twa twa-flag-united-kingdom"></i>English</a>
+              <a class="dropdown-item" href="javascript:changeLanguage('french')"><i class="twa twa-flag-france"></i>Français</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main role="main">
+      <div class="d-flex flex-column w-100" style="justify-content: center; color: var(--white); height: 100vh">
+        <div class="fullscreen-image" style="background-image: url('assets/img/home/background.png')"></div>
+        <div class="text-center">
+          <img src="assets/img/home/profile.png" href="#" style="height: 250px; border-radius: 5%" />
+          <h1 id="txt-mazewave">MazeWave</h1>
+          <p class="lead" id="txt-home-desc">Designer in his spare time</p>
+          <p class="lead">
+            <a href="https://github.com/MazeWave" class="btn btn-lg btn-dark"><i class="fab fa-github"></i><span id="txt-github">Github</span></a>
+          </p>
         </div>
-      </footer>
-    </div>
-  </body>
+      </div>
+    </main>
+
+    <footer class="mt-auto text-center w-100" style="position: absolute; bottom: 1em">
+      <div class="inner">
+        <p><span id="txt-credit">This website was made by</span> <a href="https://github.com/06Games">Evan Galli</a></p>
+      </div>
+    </footer>
+  </div>
 </html>

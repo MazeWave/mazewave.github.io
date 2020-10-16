@@ -9,7 +9,9 @@ $(function () {
 
 function navmenuColor() {
   var $nav = $("header");
-  $nav.toggleClass("scrolled", $(document).scrollTop() > $("content").offset().top - $nav.height() - 30);
+  if ($("content").length) $nav.toggleClass("scrolled", $(document).scrollTop() > $("content").offset().top - $nav.height() - 30);
+  else $nav.removeClass("scrolled");
+  
 }
 
 function localize() {
@@ -18,7 +20,7 @@ function localize() {
       $(this).html(data[$(this).attr("id")]);
     });
     $("[id*=beer-]").each(function () {
-        $(this).attr("data-beer-label", data[$(this).attr("id")]);
+      $(this).attr("data-beer-label", data[$(this).attr("id")]);
     });
   });
 }
