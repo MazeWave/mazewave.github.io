@@ -1,0 +1,13 @@
+{
+  "txt-mazewave": "MazeWave",
+  "txt-home": "Accueil",
+  "txt-credit": "Ce site a été créé par",
+
+  "txt-github": "Github",
+  "txt-download": "Télécharger",
+
+  "txt-vrp": "Vanilla Raytraced",
+  "txt-vrp-title": "Un pack de ressource RTX",
+  "txt-vrp-desc": "Vanilla Raytraced est un pack de ressources pour <b>Minecraft Windows 10 edition</b> qui ajoute des ressources PBR. Ce pack a pour objectif de rester le plus fidèle possible à la version vanilla de Minecraft. Il vous permettra donc de profiter pleinement du potentiel du raytracing sans dénaturer Minecraft.",
+  "txt-vrp-beta": "Cette version du pack est encore en <b>phase de développement</b>. Bien qu'elle ait été testé tout au long de sa production, il n'est pas exclu que vous puissiez rencontrer des bugs lors de son utilisation."
+}

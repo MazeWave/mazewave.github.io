@@ -21,23 +21,24 @@
     </style>
 
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/js.cookie.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
   </head>
   <body>
     <div class="mx-auto">
-      <header class="p-3 masthead mb-auto" style="color: var(--white)">
+      <header class="p-3 masthead mb-auto scrolled" style="color: var(--white)">
         <div class="inner">
-          <h3 class="masthead-brand"><a href="https://mazewave.github.io">MazeWave</a></h3>
+          <h3 class="masthead-brand" id="txt-mazewave"><a href="https://mazewave.github.io">MazeWave</a></h3>
           <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link" href="/">Home</a>
-            <a class="nav-link active" href="vanilla-raytraced.html">Vanilla Raytraced</a>
+            <a class="nav-link" href="/" id="txt-home">Home</a>
+            <a class="nav-link active" href="vanilla-raytraced.html" id="txt-vrp">Vanilla Raytraced</a>
             <div class="dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" id="language" data-toggle="dropdown"><i class="fas fa-language"></i></a>
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="#"><i class="twa twa-flag-united-kingdom"></i>English</a>
-                <a class="dropdown-item" href="#"><i class="twa twa-flag-france"></i>Français</a>
+                <a class="dropdown-item" href="javascript:changeLanguage('english')"><i class="twa twa-flag-united-kingdom"></i>English</a>
+                <a class="dropdown-item" href="javascript:changeLanguage('french')"><i class="twa twa-flag-france"></i>Français</a>
               </div>
             </div>
           </nav>
@@ -48,35 +49,40 @@
           <div class="fullscreen-image" style="background-image: url('assets/img/vanilla-raytraced/fault.jpg')"></div>
           <div class="text-center">
             <img src="assets/img/vanilla-raytraced/icon.png" href="#" style="height: 250px; border-radius: 5%" />
-            <h1>Vanilla Raytraced</h1>
-            <p class="lead">Adds PBR resources to Minecraft</p>
+            <h1 id="txt-vrp">Vanilla Raytraced</h1>
+            <p class="lead" id="txt-vrp-title">An RTX resource pack</p>
             <p class="lead">
-              <a href="https://github.com/MazeWave/Vanilla-Raytraced" class="btn btn-lg btn-dark"><i class="fab fa-github"></i>Github</a>
-              <a href="https://github.com/MazeWave/Vanilla-Raytraced/releases/latest" class="btn btn-lg btn-secondary"><i class="fas fa-download"></i>Download</a>
+              <a href="https://github.com/MazeWave/Vanilla-Raytraced" class="btn btn-lg btn-dark"><i class="fab fa-github"></i><span id="txt-github">Github</span></a>
+              <a href="https://github.com/MazeWave/Vanilla-Raytraced/releases/latest" class="btn btn-lg btn-secondary">
+                <i class="fas fa-download"></i><span id="txt-download">Download</span>
+              </a>
             </p>
           </div>
         </div>
 
         <content class="panel d-block mb-5">
-            <p class="description">
-              Vanilla Raytraced is a resource pack for <b>Minecraft Windows 10 edition</b> that adds PBR resources. This pack aims to remain as faithful as possible to
-              the vanilla version of Minecraft. It will therefore allow you to take advantage of the full potential of the raytracing without denaturing Minecraft.
-            </p>
+          <p class="description" id="txt-vrp-desc">
+            Vanilla Raytraced is a resource pack for <b>Minecraft Windows 10 edition</b> that adds PBR resources. This pack aims to remain as faithful as possible to the
+            vanilla version of Minecraft. It will therefore allow you to take advantage of the full potential of the raytracing without denaturing Minecraft.
+          </p>
 
-            <div class="text-center mb-5 text-light" style="max-width: 900px; height: 500px;  margin: 0 auto; display: flex; text-align: center; background: #2f2f2f;">
-              <h3 style="margin: auto;">Trailer</h3>
-            </div>
+          <div class="text-center mb-5 text-light" style="max-width: 900px; height: 500px; margin: 0 auto; display: flex; text-align: center; background: #2f2f2f">
+            <h3 style="margin: auto">Trailer</h3>
+          </div>
 
-            <div class="alert alert-warning" role="alert">
-              <i class="fas fa-exclamation-triangle"></i>This version of the pack is still in <b>early development</b>. Although it has been tested throughout its
-              production, it is not excluded that you may encounter bugs while using it.
-            </div>
+          <div class="alert alert-warning" role="alert">
+            <i class="fas fa-exclamation-triangle"></i>
+            <span id="txt-vrp-beta">
+              This version of the pack is still in <b>early development</b>. Although it has been tested throughout its production, it is not excluded that you may
+              encounter bugs while using it.
+            </span>
+          </div>
         </content>
       </main>
 
       <footer class="mt-auto text-center">
         <div class="inner">
-          <p>This website was made by <a href="https://github.com/06Games">Evan Galli</a></p>
+          <p><span id="txt-credit">This website was made by</span> <a href="https://github.com/06Games">Evan Galli</a></p>
         </div>
       </footer>
     </div>
