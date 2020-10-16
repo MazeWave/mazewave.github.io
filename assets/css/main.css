@@ -1,0 +1,65 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  background-color: #1e1e1e;
+  color: var(--light);
+}
+a,
+a:focus,
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+i[class*="fa-"] {
+  margin-right: 6px;
+}
+.alert-warning {
+    color: #fbebbc;
+    background-color: #b99015;
+    border-color: #b38b15;
+}
+
+/******
+ Navbar 
+ ******/
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+.nav-link.active {
+  color: #ddd;
+}
+
+/**********
+ Components
+ **********/
+.fullscreen-image {
+  /* Darkens the image */
+  filter: brightness(60%);
+  -webkit-filter: brightness(60%);
+
+  /* Size and position */
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.panel {
+  width: 90%;
+  margin: -4em auto 0;
+  background: #343434;
+  border-radius: 10px;
+  padding: 2em;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
