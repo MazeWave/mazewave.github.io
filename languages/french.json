@@ -6,6 +6,9 @@
   "txt-github": "Github",
   "txt-download": "Télécharger",
 
+  "beer-before": "Avant",
+  "beer-after": "Après",
+
   "txt-vrp": "Vanilla Raytraced",
   "txt-vrp-title": "Un pack de ressource RTX",
   "txt-vrp-desc": "Vanilla Raytraced est un pack de ressources pour <b>Minecraft Windows 10 edition</b> qui ajoute des ressources PBR. Ce pack a pour objectif de rester le plus fidèle possible à la version vanilla de Minecraft. Il vous permettra donc de profiter pleinement du potentiel du raytracing sans dénaturer Minecraft.",

@@ -13,13 +13,16 @@ function navmenuColor() {
 }
 
 function localize() {
-  $.ajax("languages/"+(Cookies.get('language') ?? "english")+".json", { dataType: "json" }).done(function (data) {
-  $("[id*=txt-]").each(function () {
-    $(this).html(data[$(this).attr("id")]);
-  });
+  $.ajax("languages/" + (Cookies.get("language") ?? "english") + ".json", { dataType: "json" }).done(function (data) {
+    $("[id*=txt-]").each(function () {
+      $(this).html(data[$(this).attr("id")]);
+    });
+    $("[id*=beer-]").each(function () {
+        $(this).attr("data-beer-label", data[$(this).attr("id")]);
+    });
   });
 }
-function changeLanguage(lang){
-    Cookies.set('language', lang);
-    localize();
+function changeLanguage(lang) {
+  Cookies.set("language", lang);
+  localize();
 }

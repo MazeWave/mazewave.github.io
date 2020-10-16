@@ -31,11 +31,16 @@ i[class*="twa-"] {
   color: var(--light);
   background: none;
 }
-header{
+header {
   transition: background-color 200ms linear;
+  z-index: 5;
 }
-header.scrolled{
+header.scrolled {
   background-color: #2d2d2d;
+}
+.beer-reveal[data-beer-label]::after,
+.beer-slider[data-beer-label]::after {
+  background: hsla(0, 0%, 9.4%, 0.75);
 }
 
 /******
