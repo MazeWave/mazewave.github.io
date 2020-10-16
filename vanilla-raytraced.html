@@ -7,10 +7,9 @@
     <link rel="icon" type="image/png" href="assets/img/favicon.png" />
     <title>MazeWave - Vanilla Raytraced</title>
 
-    
     <link href="https://unpkg.com/beerslider/dist/BeerSlider.css" rel="stylesheet" />
     <script src="https://unpkg.com/beerslider/dist/BeerSlider.js"></script>
-    
+
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/fontawesome.min.css" rel="stylesheet" />
     <link href="assets/css/twemoji-amazing.css" rel="stylesheet" />
@@ -49,7 +48,7 @@
             <p class="lead" id="txt-vrp-title">An RTX resource pack</p>
             <p class="lead">
               <a href="https://github.com/MazeWave/Vanilla-Raytraced" class="btn btn-lg btn-dark"><i class="fab fa-github"></i><span id="txt-github">Github</span></a>
-              <a href="https://github.com/MazeWave/Vanilla-Raytraced/releases/latest" class="btn btn-lg btn-secondary">
+              <a href="https://github.com/MazeWave/Vanilla-Raytraced/releases/latest" id="downloadBtn" class="btn btn-lg btn-secondary">
                 <i class="fas fa-download"></i><span id="txt-download">Download</span>
               </a>
             </p>
@@ -74,56 +73,44 @@
             </span>
           </div>
 
+          <h2>Screenshots</h2>
           <div class="text-center">
             <div class="beer-slider" id="beer-before" data-beer-label="Before">
               <img src="assets/img/vanilla-raytraced/bedroom-before.png" alt="" />
-              <div class="beer-reveal" id="beer-after" data-beer-label="After">
-                <img src="assets/img/vanilla-raytraced/bedroom-after.png" alt="" />
-              </div>
+              <div class="beer-reveal" id="beer-after" data-beer-label="After"><img src="assets/img/vanilla-raytraced/bedroom-after.png" alt="" /></div>
             </div>
             <div class="beer-slider" id="beer-before" data-beer-label="Before">
               <img src="assets/img/vanilla-raytraced/building-before.png" alt="" />
-              <div class="beer-reveal" id="beer-after" data-beer-label="After">
-                <img src="assets/img/vanilla-raytraced/building-after.png" alt="" />
-              </div>
+              <div class="beer-reveal" id="beer-after" data-beer-label="After"><img src="assets/img/vanilla-raytraced/building-after.png" alt="" /></div>
             </div>
             <div class="beer-slider" id="beer-before" data-beer-label="Before">
               <img src="assets/img/vanilla-raytraced/cave-before.png" alt="" />
-              <div class="beer-reveal" id="beer-after" data-beer-label="After">
-                <img src="assets/img/vanilla-raytraced/cave-after.png" alt="" />
-              </div>
+              <div class="beer-reveal" id="beer-after" data-beer-label="After"><img src="assets/img/vanilla-raytraced/cave-after.png" alt="" /></div>
             </div>
             <div class="beer-slider" id="beer-before" data-beer-label="Before">
               <img src="assets/img/vanilla-raytraced/fault-before.png" alt="" />
-              <div class="beer-reveal" id="beer-after" data-beer-label="After">
-                <img src="assets/img/vanilla-raytraced/fault-after.png" alt="" />
-              </div>
+              <div class="beer-reveal" id="beer-after" data-beer-label="After"><img src="assets/img/vanilla-raytraced/fault-after.png" alt="" /></div>
             </div>
             <div class="beer-slider" id="beer-before" data-beer-label="Before">
               <img src="assets/img/vanilla-raytraced/jungle-before.png" alt="" />
-              <div class="beer-reveal" id="beer-after" data-beer-label="After">
-                <img src="assets/img/vanilla-raytraced/jungle-after.png" alt="" />
-              </div>
+              <div class="beer-reveal" id="beer-after" data-beer-label="After"><img src="assets/img/vanilla-raytraced/jungle-after.png" alt="" /></div>
             </div>
             <div class="beer-slider" id="beer-before" data-beer-label="Before">
               <img src="assets/img/vanilla-raytraced/mineshaft-before.png" alt="" />
-              <div class="beer-reveal" id="beer-after" data-beer-label="After">
-                <img src="assets/img/vanilla-raytraced/mineshaft-after.png" alt="" />
-              </div>
+              <div class="beer-reveal" id="beer-after" data-beer-label="After"><img src="assets/img/vanilla-raytraced/mineshaft-after.png" alt="" /></div>
             </div>
             <div class="beer-slider" id="beer-before" data-beer-label="Before">
               <img src="assets/img/vanilla-raytraced/nether-before.png" alt="" />
-              <div class="beer-reveal" id="beer-after" data-beer-label="After">
-                <img src="assets/img/vanilla-raytraced/nether-after.png" alt="" />
-              </div>
+              <div class="beer-reveal" id="beer-after" data-beer-label="After"><img src="assets/img/vanilla-raytraced/nether-after.png" alt="" /></div>
             </div>
             <div class="beer-slider" id="beer-before" data-beer-label="Before">
               <img src="assets/img/vanilla-raytraced/water-before.png" alt="" />
-              <div class="beer-reveal" id="beer-after" data-beer-label="After">
-                <img src="assets/img/vanilla-raytraced/water-after.png" alt="" />
-              </div>
+              <div class="beer-reveal" id="beer-after" data-beer-label="After"><img src="assets/img/vanilla-raytraced/water-after.png" alt="" /></div>
             </div>
           </div>
+
+          <hr />
+          <p id="txt-vrp-downloadCount">Vanilla Raytraced a d’ores et déjà <b id="downloadCount"></b> téléchargements !</p>
         </content>
       </main>
 
@@ -138,5 +125,21 @@
     $(document.getElementsByClassName("beer-slider")).each(function () {
       new BeerSlider(this);
     });
+
+    $("#downloadBtn").click(function (event) {
+      $.ajax("https://api.github.com/repos/MazeWave/Vanilla-Raytraced/releases/latest", { dataType: "json" }).done(function (data) {
+        window.location = data.assets[0].browser_download_url;
+      });
+      event.preventDefault();
+    });
+
+    $totalDownload = 0;
+    $.ajax("https://api.github.com/repos/MazeWave/Vanilla-Raytraced/releases", { dataType: "json" }).done(function (data) {
+      $(data).each(function () {
+        $totalDownload += this.assets[0].download_count;
+      });
+      $("#downloadCount").text($totalDownload);
+    });
+    $("body").on("localized", () => $("#downloadCount").text($totalDownload));
   </script>
 </html>

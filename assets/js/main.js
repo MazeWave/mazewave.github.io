@@ -11,7 +11,6 @@ function navmenuColor() {
   var $nav = $("header");
   if ($("content").length) $nav.toggleClass("scrolled", $(document).scrollTop() > $("content").offset().top - $nav.height() - 30);
   else $nav.removeClass("scrolled");
-  
 }
 
 function localize() {
@@ -22,9 +21,10 @@ function localize() {
     $("[id*=beer-]").each(function () {
       $(this).attr("data-beer-label", data[$(this).attr("id")]);
     });
+    $("body").trigger("localized");
   });
 }
 function changeLanguage(lang) {
-  Cookies.set("language", lang);
+  Cookies.set("language", lang, { sameSite: 'Lax', expires: 365 });
   localize();
 }
