@@ -47,7 +47,6 @@
             <h1 id="txt-vrp">Vanilla Raytraced</h1>
             <p class="lead" id="txt-vrp-title">An RTX resource pack</p>
             <p class="lead">
-              <a href="https://github.com/MazeWave/Vanilla-Raytraced" class="btn btn-lg btn-dark"><i class="fab fa-github"></i><span id="txt-github">Github</span></a>
               <a href="https://github.com/MazeWave/Vanilla-Raytraced/releases/latest" id="downloadBtn" class="btn btn-lg btn-secondary">
                 <i class="fas fa-download"></i><span id="txt-download">Download</span>
               </a>
@@ -109,8 +108,19 @@
             </div>
           </div>
 
-          <hr />
-          <p id="txt-vrp-downloadCount">Vanilla Raytraced a d’ores et déjà <b id="downloadCount"></b> téléchargements !</p>
+          <!--<hr />
+          <p id="txt-vrp-downloadCount">Vanilla Raytraced already has <b id="downloadCount"></b> downloads!</p>-->
+          <div class="d-flex mt-5" style="gap: 25px; margin: 0 auto; max-width: 900px;">
+            <a href="https://github.com/MazeWave/Vanilla-Raytraced" class="btn btn-lg btn-dark" style="flex: 1 1 0px">
+              <i class="fab fa-github"></i><span id="txt-github">Github</span>
+            </a>
+            <a href="https://mcpedl.com/vanilla-raytraced/" class="btn btn-lg btn-success" style="flex: 1 1 0px">
+              <i class="fas fa-cube"></i><span id="txt-mcpedl">MCPEDL</span>
+            </a>
+            <a href="https://www.curseforge.com/minecraft/mc-addons/vanilla-raytraced" class="btn btn-lg btn-danger" style="flex: 1 1 0px">
+              <i class="fas fa-fire"></i><span id="txt-curse">CurseForge</span>
+            </a>
+          </div>
         </content>
       </main>
 
@@ -133,13 +143,13 @@
       event.preventDefault();
     });
 
-    $totalDownload = 0;
+    /*$totalDownload = 0;
     $.ajax("https://api.github.com/repos/MazeWave/Vanilla-Raytraced/releases", { dataType: "json" }).done(function (data) {
       $(data).each(function () {
         $totalDownload += this.assets[0].download_count;
       });
       $("#downloadCount").text($totalDownload);
     });
-    $("body").on("localized", () => $("#downloadCount").text($totalDownload));
+    $("body").on("localized", () => $("#downloadCount").text($totalDownload));*/
   </script>
 </html>
