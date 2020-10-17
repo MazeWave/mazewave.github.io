@@ -45,6 +45,9 @@ header {
 header.scrolled {
   background-color: #2d2d2d;
 }
+.beer-slider {
+  max-width: 700px;
+}
 .beer-reveal[data-beer-label]::after,
 .beer-slider[data-beer-label]::after {
   background: hsla(0, 0%, 9.4%, 0.75);
