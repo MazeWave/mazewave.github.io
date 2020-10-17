@@ -32,8 +32,8 @@
             <div class="dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" id="language" data-toggle="dropdown"><i class="fas fa-language"></i></a>
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="javascript:changeLanguage('english')"><i class="twa twa-flag-united-kingdom"></i>English</a>
-                <a class="dropdown-item" href="javascript:changeLanguage('french')"><i class="twa twa-flag-france"></i>Français</a>
+                <a class="dropdown-item" href="#" onclick="changeLanguage('english')"><i class="twa twa-flag-united-kingdom"></i>English</a>
+                <a class="dropdown-item" href="#" onclick="changeLanguage('french')"><i class="twa twa-flag-france"></i>Français</a>
               </div>
             </div>
           </nav>
@@ -43,7 +43,7 @@
         <div class="d-flex flex-column w-100" style="justify-content: center; color: var(--white); height: 100vh">
           <div class="fullscreen-image" style="background-image: url('assets/img/vanilla-raytraced/jungle.jpg')"></div>
           <div class="text-center">
-            <img src="assets/img/vanilla-raytraced/icon.png" href="#" style="height: 250px; border-radius: 5%" />
+            <img src="assets/img/vanilla-raytraced/icon.png" href="#" class="presentation-icon" />
             <h1 id="txt-vrp">Vanilla Raytraced</h1>
             <p class="lead" id="txt-vrp-title">An RTX resource pack</p>
             <p class="lead">
@@ -110,7 +110,7 @@
 
           <!--<hr />
           <p id="txt-vrp-downloadCount">Vanilla Raytraced already has <b id="downloadCount"></b> downloads!</p>-->
-          <div class="d-flex mt-5 flex-wrap" style="gap: 25px; margin: 0 auto; max-width: 900px;">
+          <div class="d-flex mt-5 flex-wrap" style="gap: 25px; margin: 0 auto; max-width: 900px">
             <a href="https://github.com/MazeWave/Vanilla-Raytraced" class="btn btn-lg btn-dark" style="flex: 1 1 0px">
               <i class="fab fa-github"></i><span id="txt-github">Github</span>
             </a>

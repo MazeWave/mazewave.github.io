@@ -60,9 +60,13 @@ header.scrolled {
 /******
  Navbar 
  ******/
+.masthead-brand {
+  display: none;
+}
 @media (min-width: 48em) {
   .masthead-brand {
     float: left;
+    display: initial;
   }
   .nav-masthead {
     float: right;
@@ -91,6 +95,11 @@ header.scrolled {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.presentation-icon {
+  max-width: 250px;
+  width: 60%;
+  border-radius: 5%;
+}
 .panel {
   width: 90%;
   margin: -30px auto 0;
@@ -99,12 +108,19 @@ header.scrolled {
   padding: 30px;
   box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
-@media(min-width: 830px){
+@media (max-width: 229px) {
+  .panel {
+    margin: 0;
+    width: 100%;
+    padding: 1em;
+  }
+}
+@media (min-width: 830px) {
   .panel {
     padding: 30px calc(50% - 400px);
   }
 }
-@media(min-width: 1630px){
+@media (min-width: 1630px) {
   .panel {
     padding: 30px calc(50% - 800px);
   }
