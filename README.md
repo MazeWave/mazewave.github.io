@@ -7,4 +7,4 @@
 </p>
 
 Website made by [Evan Galli](https://github.com/06Games)  
-Under [CC-BY-SA-4.0](https://github.com/MazeWave/mazewave.github.io/blob/master/LICENSE) license
+Under [CC-BY-SA-4.0](https://github.com/MazeWave/mazewave.github.io/blob/master/LICENSE.md) license

@@ -14,6 +14,11 @@
     <link href="assets/css/fontawesome.min.css" rel="stylesheet" />
     <link href="assets/css/twemoji-amazing.css" rel="stylesheet" />
     <link href="assets/css/main.css" rel="stylesheet" />
+    <style>
+      .carousel-caption {
+        bottom: 2em;
+      }
+    </style>
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/js.cookie.min.js"></script>
@@ -39,13 +44,20 @@
         </div>
       </header>
       <main role="main">
-        <div class="d-flex flex-column w-100" style="justify-content: center; color: var(--white); height: 100vh">
+        <div class="d-flex flex-column w-100 introduction">
           <div class="carousel slide carousel-fade fullscreen-image" data-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active"><img src="assets/img/vanilla-raytraced/jungle.jpg" class="d-block w-100"></div>
-              <div class="carousel-item"><img src="assets/img/vanilla-raytraced/endPortal.jpg" class="d-block w-100"></div>
-              <div class="carousel-item"><img src="assets/img/vanilla-raytraced/underwaterTemple.jpg" class="d-block w-100"></div>
-              <div class="carousel-item"><img src="assets/img/vanilla-raytraced/underwaterBeacon.jpg" class="d-block w-100"></div>
+              <div class="carousel-item active"><div style="background-image: url(assets/img/vanilla-raytraced/jungle.jpg)" class="img"></div></div>
+              <div class="carousel-item"><div style="background-image: url(assets/img/vanilla-raytraced/endPortal.jpg)" class="img"></div></div>
+              <div class="carousel-item"><div style="background-image: url(assets/img/vanilla-raytraced/underwaterTemple.jpg)" class="img"></div></div>
+              <div class="carousel-item">
+                <div style="background-image: url(assets/img/vanilla-raytraced/livingRoom.jpg)" class="img"></div>
+                <div class="carousel-caption d-none d-md-block"><b>Longfield Modern Mansion</b><small>by GabTheCrafter and TheCrazyTitan for CrackedCubes</small></div>
+              </div>
+              <div class="carousel-item">
+                <div style="background-image: url(assets/img/vanilla-raytraced/bedroom.jpg)" class="img"></div>
+                <div class="carousel-caption d-none d-md-block"><b>Longfield Modern Mansion</b><small>by GabTheCrafter and TheCrazyTitan for CrackedCubes</small></div>
+              </div>
             </div>
           </div>
           <div class="text-center">
@@ -125,7 +137,7 @@
               <div class="beer-reveal" id="beer-after" data-beer-label="After"><img src="assets/img/vanilla-raytraced/screenshots/wedding-after.jpg" alt="" /></div>
             </div>
           </div>
-          
+
           <div class="d-flex mt-5 flex-wrap" style="gap: 25px; margin: 0 auto; max-width: 900px">
             <a href="https://github.com/MazeWave/Vanilla-Raytraced" class="btn btn-lg btn-dark" style="flex: 1 1 0px">
               <i class="fab fa-github"></i><span id="txt-github">Github</span>
