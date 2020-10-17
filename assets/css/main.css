@@ -82,16 +82,17 @@ header.scrolled {
 /**********
  Components
  **********/
-.fullscreen-image {
-  /* Darkens the image */
-  filter: brightness(60%);
-  -webkit-filter: brightness(60%);
-
+.fullscreen-image, .fullscreen-image * {
   /* Size and position */
   position: absolute;
   height: 100%;
   width: 100%;
   z-index: -1;
+}
+.fullscreen-image:not(.carousel), .fullscreen-image img {
+  /* Darkens the image */
+  filter: brightness(60%);
+  -webkit-filter: brightness(60%);
 
   /* Center and scale the image nicely */
   background-position: center;
