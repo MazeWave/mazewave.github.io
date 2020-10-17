@@ -7,6 +7,7 @@
   "txt-mcpedl": "MCPEDL",
   "txt-curse": "CurseForge",
   "txt-download": "Télécharger",
+  "txt-addons": "Modules",
 
   "beer-before": "Avant",
   "beer-after": "Après",
@@ -17,5 +18,12 @@
   "txt-vrp-title": "Un pack de ressource RTX",
   "txt-vrp-desc": "Vanilla Raytraced est un pack de ressources pour <b>Minecraft Windows 10 edition</b> qui ajoute des ressources PBR. Ce pack a pour objectif de rester le plus fidèle possible à la version vanilla de Minecraft. Il vous permettra donc de profiter pleinement du potentiel du raytracing sans dénaturer Minecraft.",
   "txt-vrp-beta": "Cette version du pack est encore en <b>phase de développement</b>. Bien qu'elle ait été testé tout au long de sa production, il n'est pas exclu que vous puissiez rencontrer des bugs lors de son utilisation.",
-  "txt-vrp-downloadCount": "Vanilla Raytraced a d’ores et déjà <b id=downloadCount></b> téléchargements !"
+  "txt-vrp-downloadCount": "Vanilla Raytraced a d’ores et déjà <b id=downloadCount></b> téléchargements !",
+
+  "txt-vrpAddons": "Modules pour Vanilla Raytraced",
+  "txt-vrpAddons-title": "Vous allez les adorer",
+  "txt-vrpAddons-mirror": "Miroir",
+  "txt-vrpAddons-mirror-desc": "Le module miroir pour Vanilla Raytraced remplace la texture end_bricks par une texture de miroir. Cet addon peut s'avérer utile avec des constructions modernes.",
+  "txt-vrpAddons-glass": "Verre transparent",
+  "txt-vrpAddons-glass-desc": "Le module verre transparent pour Vanilla Raytraced rend le verre totalement transparent. Cet addon peut s'avérer utile avec des constructions modernes."
 }

@@ -3,26 +3,5 @@
 		{
 			"path": "."
 		}
-	],
-	"settings": {
-		"discord.state": "Working on MazeWave's surprise",
-		"discord.details": "Editing \"Tu sauras pas !\"",
-		"discord.languageIconText": "¯\\_(ツ)_/¯",
-		"discord.iconMap": {
-			".c": "",
-			".htm": "",
-			".html": "",
-			".gitignore": "",
-			".js": "",
-			".json": "",
-			".md": "",
-			".py": "",
-			"package.json": "",
-			".ts": "",
-			".lua": "",
-			".vue": ""
-		},
-		"discord.showElapsedTime": false,
-		"discord.showDebug": false
-	}
+	]
 }
