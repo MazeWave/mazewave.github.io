@@ -17,7 +17,6 @@
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/js.cookie.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
   </head>
@@ -41,7 +40,16 @@
       </header>
       <main role="main">
         <div class="d-flex flex-column w-100" style="justify-content: center; color: var(--white); height: 100vh">
-          <div class="fullscreen-image" style="background-image: url('assets/img/vanilla-raytraced/jungle.jpg')"></div>
+          <div class="carousel slide carousel-fade fullscreen-image" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="assets/img/vanilla-raytraced/jungle.jpg" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/vanilla-raytraced/underwaterBeacon.jpg" class="d-block w-100">
+              </div>
+            </div>
+          </div>
           <div class="text-center">
             <img src="assets/img/vanilla-raytraced/icon.png" href="#" class="presentation-icon" />
             <h1 id="txt-vrp">Vanilla Raytraced</h1>
