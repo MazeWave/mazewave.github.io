@@ -19,6 +19,45 @@
     <script src="assets/js/js.cookie.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <style>
+      .addons .row {
+        gap: 1em;
+      }
+      .addons .text {
+        -ms-flex: 1;
+        flex: 1;
+        max-width: 100%;
+      }
+      .addons .image {
+        display: none;
+      }
+      .addons .image > img {
+        width: 100%;
+        border-radius: 2em;
+      }
+      @media (min-width: 768px) {
+        .addons .text {
+          max-width: 58.33%;
+        }
+        .addons .image {
+          display: block;
+          -ms-flex: 0 0 41.66%;
+          flex: 0 0 41.66%;
+          max-width: 41.66%;
+        }
+      }
+      @media (min-width: 1630px) {
+        .addons .text {
+          max-width: 75%;
+        }
+        .addons .image {
+          -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+          max-width: 25%;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="mx-auto">
@@ -52,9 +91,9 @@
           </div>
         </div>
 
-        <content class="panel d-block mb-5">
+        <content class="panel d-block mb-5 addons">
           <div class="row">
-            <div class="col-md-7">
+            <div class="text">
               <h2 id="txt-vrpAddons-mirror">Mirror</h2>
               <p class="lead" id="txt-vrpAddons-mirror-desc">
                 Mirror Addons for Vanilla Raytraced replace end_bricks texture with a mirror one. This addon could be helpful with Modernistic build.
@@ -68,17 +107,11 @@
                 </a>
               </p>
             </div>
-            <div class="col-md-5">
-              <img
-                width="100%"
-                src="https://raw.githubusercontent.com/MazeWave/Vanilla-Raytraced-Addons-Mirror/master/Vanilla%20Raytraced%20Mirror%20Addons/pack_icon.png"
-                href="#"
-              />
-            </div>
+            <div class="image"><img src="assets/img/vanilla-raytraced/icon-mirror.jpg" href="#" /></div>
           </div>
           <hr style="margin: 2.5em 0" />
           <div class="row">
-            <div class="col-md-7 order-md-2">
+            <div class="text order-md-2">
               <h2 id="txt-vrpAddons-glass">Clean Glass</h2>
               <p class="lead" id="txt-vrpAddons-glass-desc">
                 Clean Glass Addon for Vanilla Raytraced makes the glass completely transparent. This addon could be helpful with modernistic build.
@@ -92,13 +125,7 @@
                 </a>
               </p>
             </div>
-            <div class="col-md-5 order-md-1">
-              <img
-                width="100%"
-                src="https://raw.githubusercontent.com/MazeWave/Vanilla-Raytraced-Addons-Glass/master/Vanilla%20Raytraced%20Clean%20Glass%20Addons/pack_icon.png"
-                href="#"
-              />
-            </div>
+            <div class="image order-md-1"><img src="assets/img/vanilla-raytraced/icon-glass.jpg" href="#" /></div>
           </div>
         </content>
       </main>
