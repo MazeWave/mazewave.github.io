@@ -113,6 +113,7 @@ header.scrolled {
   width: 100%;
   height: 100%;
 }
+
 .carousel-caption {
   text-align: left;
   left: 0;
@@ -125,11 +126,21 @@ header.scrolled {
   display: block;
   margin-bottom: 0.2em;
 }
+.beerWithCaption {
+  max-width: 700px;
+  display: inline-block;
+  position: relative;
+}
+.beerWithCaption .carousel-caption {
+  padding-bottom: 0.8em;
+}
+
 .presentation-icon {
   max-width: 250px;
   width: 60%;
   border-radius: 5%;
 }
+
 .panel {
   width: 90%;
   margin: -30px auto 0;
@@ -155,6 +166,7 @@ header.scrolled {
     padding: 30px calc(50% - 800px);
   }
 }
+
 .description {
   color: #eaeaea;
   font-size: 1.15em;
