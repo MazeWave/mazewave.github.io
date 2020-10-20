@@ -19,9 +19,20 @@ jobs:
       uses: cicirello/generate-sitemap@v1.6.1
       with:
         base-url-path: https://mazewave.github.io
+    - name: Output stats
+      run: |
+        echo "sitemap-path: ${{ steps.sitemap.outputs.sitemap-path }}"
+        echo "url-count: ${{ steps.sitemap.outputs.url-count }}"
+        echo "excluded-count: ${{ steps.sitemap.outputs.excluded-count }}"
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
       with:
         title: "Automated sitemap update"
         body: > 
           Sitemap updated by the [generate-sitemap](https://github.com/cicirello/generate-sitemap)
+        author: GitHub <noreply@github.com>
+        committer: GitHub <noreply@github.com>
+    - name: Check outputs
+      run: |
+          echo "Pull Request Number: ${{ steps.cpr.outputs.pull-request-number }}"
+          echo "Pull Request URL: ${{ steps.cpr.outputs.pull-request-url }}"
