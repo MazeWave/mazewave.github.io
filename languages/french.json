@@ -4,6 +4,7 @@
   "txt-credit": "Ce site a été créé par",
 
   "txt-github": "Github",
+  "txt-discord": "Discord",
   "txt-mcpedl": "MCPEDL",
   "txt-curse": "CurseForge",
   "txt-download": "Télécharger",
@@ -26,5 +27,7 @@
   "txt-vrpAddons-mirror": "Miroir",
   "txt-vrpAddons-mirror-desc": "Le module miroir pour Vanilla Raytraced remplace la texture end_bricks par une texture de miroir. Cet addon peut s'avérer utile avec des constructions modernes.",
   "txt-vrpAddons-glass": "Verre transparent",
-  "txt-vrpAddons-glass-desc": "Le module verre transparent pour Vanilla Raytraced rend le verre totalement transparent. Cet addon peut s'avérer utile avec des constructions modernes."
+  "txt-vrpAddons-glass-desc": "Le module verre transparent pour Vanilla Raytraced rend le verre totalement transparent. Cet addon peut s'avérer utile avec des constructions modernes.",
+  
+  "txt-06games": "06Games"
 }

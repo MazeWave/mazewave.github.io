@@ -4,6 +4,7 @@
   "txt-credit": "This website was made by",
 
   "txt-github": "Github",
+  "txt-discord": "Discord",
   "txt-mcpedl": "MCPEDL",
   "txt-curse": "CurseForge",
   "txt-download": "Download",
@@ -26,5 +27,7 @@
   "txt-vrpAddons-mirror": "Mirror",
   "txt-vrpAddons-mirror-desc": "Mirror Addons for Vanilla Raytraced replace end_bricks texture with a mirror one. This addon could be helpful with Modernistic build.",
   "txt-vrpAddons-glass": "Clean Glass",
-  "txt-vrpAddons-glass-desc": "Clean Glass Addon for Vanilla Raytraced makes the glass completely transparent. This addon could be helpful with modernistic build."
+  "txt-vrpAddons-glass-desc": "Clean Glass Addon for Vanilla Raytraced makes the glass completely transparent. This addon could be helpful with modernistic build.",
+  
+  "txt-06games": "06Games"
 }
