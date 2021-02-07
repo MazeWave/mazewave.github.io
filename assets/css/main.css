@@ -21,14 +21,14 @@ i[class*="twa-"] {
   margin-right: 6px;
 }
 .btn-darkblue {
-    background-color: #004793;
-    border-color: #004186;
-    color: white;
+  background-color: #004793;
+  border-color: #004186;
+  color: white;
 }
 .btn-darkblue:hover {
-    color: #fff;
-    background-color: #003773;
-    border-color: #003773;
+  color: #fff;
+  background-color: #003773;
+  border-color: #003773;
 }
 .alert-warning {
   color: #fbebbc;
@@ -100,15 +100,24 @@ header.scrolled {
   height: 100vh;
 }
 .introduction > .text-center {
-    width: 400px;
-    margin: 0 auto;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
 }
 .introduction #buttons {
-	display: flex;
-	gap: 5px;
+  display: flex;
+  gap: 5px;
 }
 .introduction #buttons > .btn {
-	flex: 1 1 0px;
+  flex: 1 1 0px;
+}
+@media (max-width: calc(400px + 2em)) {
+  .introduction > .text-center {
+    padding: 0 1em;
+  }
+  .introduction #buttons {
+    flex-direction: column;
+  }
 }
 .fullscreen-image {
   /* Size and position */
