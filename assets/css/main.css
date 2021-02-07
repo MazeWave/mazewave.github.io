@@ -35,6 +35,11 @@ i[class*="twa-"] {
   background-color: #b99015;
   border-color: #b38b15;
 }
+.alert-dark {
+    color: #e6e6e6;
+    background-color: #5e5e5e;
+    border-color: #555;
+}
 .dropdown-menu {
   background-color: #0007;
   border-radius: 10px;
