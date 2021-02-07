@@ -20,6 +20,16 @@ i[class*="fa-"],
 i[class*="twa-"] {
   margin-right: 6px;
 }
+.btn-darkblue {
+    background-color: #004793;
+    border-color: #004186;
+    color: white;
+}
+.btn-darkblue:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
 .alert-warning {
   color: #fbebbc;
   background-color: #b99015;
@@ -88,6 +98,17 @@ header.scrolled {
   justify-content: center;
   color: var(--white);
   height: 100vh;
+}
+.introduction > .text-center {
+    width: 400px;
+    margin: 0 auto;
+}
+.introduction #buttons {
+	display: flex;
+	gap: 5px;
+}
+.introduction #buttons > .btn {
+	flex: 1 1 0px;
 }
 .fullscreen-image {
   /* Size and position */
