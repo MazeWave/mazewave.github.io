@@ -47,7 +47,7 @@ i[class*="twa-"] {
 }
 header {
   transition: background-color 200ms linear;
-  z-index: 5;
+  z-index: 100;
   position: fixed;
   top: 0;
   left: 0;
@@ -56,8 +56,19 @@ header {
 header.scrolled {
   background-color: #2d2d2d;
 }
-.beer-slider {
-  max-width: 700px;
+.screenshots {
+  display: flex;
+  gap: 0.5em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.screenshots > [class^="beer"] {
+  flex-basis: 100%;
+}
+@media (min-width: 830px) {
+  .screenshots > [class^="beer"] {
+    flex-basis: calc(50% - 0.25em);
+  }
 }
 .beer-reveal[data-beer-label]::after,
 .beer-slider[data-beer-label]::after {
@@ -157,7 +168,6 @@ header.scrolled {
   margin-bottom: 0.2em;
 }
 .beerWithCaption {
-  max-width: 700px;
   display: inline-block;
   position: relative;
 }
