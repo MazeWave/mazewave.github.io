@@ -188,12 +188,7 @@ header.scrolled {
 }
 @media (min-width: 830px) {
   .panel {
-    padding: 30px calc(50% - 400px);
-  }
-}
-@media (min-width: 1630px) {
-  .panel {
-    padding: 30px calc(50% - 800px);
+    padding: 30px calc(50% - 50vw + 5em);
   }
 }
 
