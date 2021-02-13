@@ -20,6 +20,9 @@ i[class*="fa-"],
 i[class*="twa-"] {
   margin-right: 6px;
 }
+code {
+  color: #cc4482;
+}
 .btn-darkblue {
   background-color: #004793;
   border-color: #004186;
