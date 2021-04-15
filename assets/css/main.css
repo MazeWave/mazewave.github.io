@@ -30,6 +30,14 @@ i[class*="twa-"] {
     background-color: #003773;
     border-color: #003773;
 }
+.btn-info {
+  background-color: #18769b;
+  border-color: #177397;
+}
+.btn-info:hover {
+  background-color: #166e91;
+  border-color: #166e91;
+}
 .alert-warning {
   color: #fbebbc;
   background-color: #b99015;

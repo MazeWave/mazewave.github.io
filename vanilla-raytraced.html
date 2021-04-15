@@ -36,7 +36,7 @@
           <nav class="nav nav-masthead justify-content-center">
             <a class="nav-link" href="/" id="txt-home">Home</a>
             <a class="nav-link active" href="vanilla-raytraced" id="txt-vrp">Vanilla Raytraced</a>
-			<a class="nav-link" href="https://06games.ddns.net/" id="txt-06games">06Games</a>
+            <a class="nav-link" href="https://06games.ddns.net/" id="txt-06games">06Games</a>
             <div class="dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" id="language" data-toggle="dropdown"><i class="fas fa-language"></i></a>
               <div class="dropdown-menu">
@@ -202,15 +202,6 @@
     </div>
   </body>
   <script>
-    $(document.getElementsByClassName("beer-slider")).each(function () {
-      new BeerSlider(this);
-    });
-
-    $("#downloadBtn").click(function (event) {
-      $.ajax("https://api.github.com/repos/MazeWave/Vanilla-Raytraced/releases/latest", { dataType: "json" }).done(function (data) {
-        window.location = data.assets[0].browser_download_url;
-      });
-      event.preventDefault();
-    });
+    $("#downloadBtn").click((event) => getLatestRelease("Vanilla-Raytraced", event));
   </script>
 </html>

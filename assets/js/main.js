@@ -1,6 +1,8 @@
 $(document).ready(function () {
   navmenuColor();
   localize();
+
+  $(".beer-slider").each(function () { new BeerSlider(this); });
 });
 
 $(function () {
@@ -27,4 +29,11 @@ function localize() {
 function changeLanguage(lang) {
   Cookies.set("language", lang, { sameSite: 'Lax', expires: 365 });
   localize();
+}
+
+function getLatestRelease(repo, event) {
+  $.ajax("https://api.github.com/repos/MazeWave/" + repo + "/releases/latest", { dataType: "json" }).done(function (data) {
+    window.location = data.assets[0].browser_download_url;
+  });
+  event.preventDefault();
 }

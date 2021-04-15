@@ -70,7 +70,7 @@
           <nav class="nav nav-masthead justify-content-center">
             <a class="nav-link" href="/" id="txt-home">Home</a>
             <a class="nav-link active" href="vanilla-raytraced" id="txt-vrp">Vanilla Raytraced</a>
-			<a class="nav-link" href="https://06games.ddns.net/" id="txt-06games">06Games</a>
+            <a class="nav-link" href="https://06games.ddns.net/" id="txt-06games">06Games</a>
             <div class="dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" id="language" data-toggle="dropdown"><i class="fas fa-language"></i></a>
               <div class="dropdown-menu">
@@ -85,7 +85,7 @@
         <div class="d-flex flex-column w-100 introduction" style="max-height: 500px">
           <div class="carousel slide carousel-fade fullscreen-image" data-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active"><div style="background-image: url(assets/img/vanilla-raytraced/jungle.jpg)" class="img"></div></div>
+              <div class="carousel-item active"><div style="background-image: url(assets/img/vanilla-raytraced-addons/carousel/)" class="img"></div></div>
             </div>
           </div>
           <div class="text-center">
@@ -102,16 +102,9 @@
               <p class="lead" id="txt-vrpAddons-mirror-desc">
                 Mirror Addons for Vanilla Raytraced replace end_bricks texture with a mirror one. This addon could be helpful with Modernistic build.
               </p>
-              <p class="lead">
-                <a href="https://github.com/MazeWave/Vanilla-Raytraced-Addons-Mirror/releases/latest" id="downloadMirror" class="btn btn-lg btn-secondary">
-                  <i class="fas fa-download"></i><span id="txt-download">Download</span>
-                </a>
-                <a href="https://github.com/MazeWave/Vanilla-Raytraced-Addons-Mirror/" class="btn btn-lg btn-dark">
-                  <i class="fab fa-github"></i><span id="txt-github">Github</span>
-                </a>
-              </p>
+              <p class="lead"><a href="vanilla-raytraced-addons-mirror" class="btn btn-lg btn-info"><i class="fas fa-plus"></i><span id="txt-readMore">Read more</span></a></p>
             </div>
-            <div class="image"><img src="assets/img/vanilla-raytraced/icon-mirror.jpg" href="#" /></div>
+            <div class="image"><img src="assets/img/vanilla-raytraced-addons/icon-mirror.jpg" href="#" /></div>
           </div>
           <hr style="margin: 2.5em 0" />
           <div class="row">
@@ -120,19 +113,32 @@
               <p class="lead" id="txt-vrpAddons-glass-desc">
                 Clean Glass Addon for Vanilla Raytraced makes the glass completely transparent. This addon could be helpful with modernistic build.
               </p>
-              <p class="lead">
-                <a href="https://github.com/MazeWave/Vanilla-Raytraced-Addons-Glass/releases/latest" id="downloadGlass" class="btn btn-lg btn-secondary">
-                  <i class="fas fa-download"></i><span id="txt-download">Download</span>
-                </a>
-                <a href="https://github.com/MazeWave/Vanilla-Raytraced-Addons-Glass/" class="btn btn-lg btn-dark">
-                  <i class="fab fa-github"></i><span id="txt-github">Github</span>
-                </a>
-                <a href="https://mcpedl.com/clean-glass-vanilla-raytraced/" class="btn btn-lg btn-success">
-                  <i class="fas fa-cube"></i><span id="txt-mcpedl">MCPEDL</span>
-                </a>
-              </p>
+              <p class="lead"><a href="vanilla-raytraced-addons-glass" class="btn btn-lg btn-info"><i class="fas fa-plus"></i><span id="txt-readMore">Read more</span></a></p>
             </div>
-            <div class="image order-md-1"><img src="assets/img/vanilla-raytraced/icon-glass.jpg" href="#" /></div>
+            <div class="image order-md-1"><img src="assets/img/vanilla-raytraced-addons/icon-glass.jpg" href="#" /></div>
+          </div>
+          <hr style="margin: 2.5em 0" />
+          <div class="row">
+            <div class="text">
+              <h2 id="txt-vrpAddons-nether">Bloody Nether</h2>
+              <p class="lead" id="txt-vrpAddons-nether-desc">
+                Bloody Nether Addon for Vanilla Raytraced adds a unique atmosphere to this dimension.
+              </p>
+              <p class="lead"><a href="vanilla-raytraced-addons-nether" class="btn btn-lg btn-info"><i class="fas fa-plus"></i><span id="txt-readMore">Read more</span></a></p>
+            </div>
+            <div class="image"><img src="assets/img/vanilla-raytraced-addons/icon-nether.jpg" href="#" /></div>
+          </div>
+          <hr style="margin: 2.5em 0" />
+          <div class="row">
+            <div class="text order-md-2">
+              <h2 id="txt-vrpAddons-ores">Luminous Ores</h2>
+              <p class="lead" id="txt-vrpAddons-ores-desc">
+                Luminous Ores Addon for Vanilla Raytraced provides a whole new atmosphere to caves!<br />
+                You would see at a bend in the cave, a blue glow, that of the diamond ore that you have been looking for for hours!
+              </p>
+              <p class="lead"><a href="vanilla-raytraced-addons-ores" class="btn btn-lg btn-info"><i class="fas fa-plus"></i><span id="txt-readMore">Read more</span></a></p>
+            </div>
+            <div class="image order-md-1"><img src="assets/img/vanilla-raytraced-addons/icon-ores.jpg" href="#" /></div>
           </div>
         </content>
       </main>
@@ -145,17 +151,5 @@
     </div>
   </body>
   <script>
-    $(document.getElementsByClassName("beer-slider")).each(function () {
-      new BeerSlider(this);
-    });
-
-    $("#downloadMirror").click((event) => getLatestRelease("Vanilla-Raytraced-Addons-Mirror", event));
-    $("#downloadGlass").click((event) => getLatestRelease("Vanilla-Raytraced-Addons-Glass", event));
-    function getLatestRelease(repo, event) {
-      $.ajax("https://api.github.com/repos/MazeWave/" + repo + "/releases/latest", { dataType: "json" }).done(function (data) {
-        window.location = data.assets[0].browser_download_url;
-      });
-      event.preventDefault();
-    }
   </script>
 </html>

@@ -9,6 +9,7 @@
   "txt-mcpedl": "MCPEDL",
   "txt-curse": "CurseForge",
   "txt-download": "Download",
+  "txt-readMore": "Read more",
   "txt-addons": "Addons",
 
   "txt-screenshots": "Screenshots",
@@ -26,9 +27,17 @@
   "txt-vrpAddons": "Addons for Vanilla Raytraced",
   "txt-vrpAddons-title": "You will love them",
   "txt-vrpAddons-mirror": "Mirror",
+  "txt-vrpAddons-mirror-title": "An addon for Vanilla Raytraced",
   "txt-vrpAddons-mirror-desc": "Mirror Addons for Vanilla Raytraced replace end_bricks texture with a mirror one. This addon could be helpful with Modernistic build.",
   "txt-vrpAddons-glass": "Clean Glass",
+  "txt-vrpAddons-glass-title": "An addon for Vanilla Raytraced",
   "txt-vrpAddons-glass-desc": "Clean Glass Addon for Vanilla Raytraced makes the glass completely transparent. This addon could be helpful with modernistic build.",
+  "txt-vrpAddons-nether": "Bloody Nether",
+  "txt-vrpAddons-nether-title": "An addon for Vanilla Raytraced",
+  "txt-vrpAddons-nether-desc": "Bloody Nether Addon for Vanilla Raytraced adds a unique atmosphere to this dimension.",
+  "txt-vrpAddons-ores": "Luminous Ores",
+  "txt-vrpAddons-ores-title": "An addon for Vanilla Raytraced",
+  "txt-vrpAddons-ores-desc": "Luminous Ores Addon for Vanilla Raytraced provides a whole new atmosphere to caves! You would see at a bend in the cave, a blue glow, that of the diamond ore that you have been looking for for hours!",
   
   "txt-06games": "06Games"
 }
