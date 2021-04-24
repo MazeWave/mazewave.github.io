@@ -13,8 +13,8 @@
   "txt-addons": "Addons",
 
   "txt-screenshots": "Screenshots",
-  "beer-before": "Before",
-  "beer-after": "After",
+  "beer-rtxOff": "Without RTX",
+  "beer-rtxOn": "With RTX",
 
   "txt-home-desc": "Designer in his spare time",
 
