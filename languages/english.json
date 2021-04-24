@@ -15,6 +15,8 @@
   "txt-screenshots": "Screenshots",
   "beer-rtxOff": "Without RTX",
   "beer-rtxOn": "With RTX",
+  "beer-addonOff": "Without addon",
+  "beer-addonOn": "With addon",
 
   "txt-home-desc": "Designer in his spare time",
 
