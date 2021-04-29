@@ -9,26 +9,37 @@
   "txt-mcpedl": "MCPEDL",
   "txt-curse": "CurseForge",
   "txt-download": "Télécharger",
+  "txt-readMore": "En savoir plus",
   "txt-addons": "Modules",
 
   "txt-screenshots": "Captures d'écran",
-  "beer-before": "Avant",
-  "beer-after": "Après",
+  "beer-rtxOff": "Sans RTX",
+  "beer-rtxOn": "Avec RTX",
+  "beer-addonOff": "Sans le module",
+  "beer-addonOn": "Avec le module",
 
   "txt-home-desc": "Designer à ses heures perdues",
 
   "txt-vrp": "Vanilla Raytraced",
   "txt-vrp-title": "Un pack de ressource RTX",
   "txt-vrp-desc": "Vanilla Raytraced est un pack de ressources pour <b>Minecraft Windows 10 edition</b> qui ajoute des ressources PBR. Ce pack a pour objectif de rester le plus fidèle possible à la version vanilla de Minecraft. Il vous permettra donc de profiter pleinement du potentiel du raytracing sans dénaturer Minecraft.",
-  "txt-vrp-beta": "Cette version du pack est encore en <b>phase de développement</b>. Bien qu'elle ait été testé tout au long de sa production, il n'est pas exclu que vous puissiez rencontrer des bugs lors de son utilisation.",
+  "txt-vrp-issues": "Si vous rencontrez des bogues lors de l'utilisation de ce pack, veuillez <b><a href=\"https://github.com/MazeWave/Vanilla-Raytraced/issues/new/choose\">ouvrir un ticket sur Github</a></b>",
   "txt-vrp-downloadCount": "Vanilla Raytraced a d’ores et déjà <b id=downloadCount></b> téléchargements !",
 
   "txt-vrpAddons": "Modules pour Vanilla Raytraced",
   "txt-vrpAddons-title": "Vous allez les adorer",
   "txt-vrpAddons-mirror": "Miroir",
+  "txt-vrpAddons-mirror-title": "Un module pour Vanilla Raytraced",
   "txt-vrpAddons-mirror-desc": "Le module miroir pour Vanilla Raytraced remplace la texture <code>end_bricks</code> par une texture de miroir. Cet addon peut s'avérer utile avec des constructions modernes.",
   "txt-vrpAddons-glass": "Verre transparent",
+  "txt-vrpAddons-glass-title": "Un module pour Vanilla Raytraced",
   "txt-vrpAddons-glass-desc": "Le module verre transparent pour Vanilla Raytraced rend le verre totalement transparent. Cet addon peut s'avérer utile avec des constructions modernes.",
-  
+  "txt-vrpAddons-nether": "Nether sanglant",
+  "txt-vrpAddons-nether-title": "Un module pour Vanilla Raytraced",
+  "txt-vrpAddons-nether-desc": "Le module nether sanglant pour Vanilla Raytraced donne une atmosphère unique à cette dimension.",
+  "txt-vrpAddons-ores": "Minerais lumineux",
+  "txt-vrpAddons-ores-title": "Un module pour Vanilla Raytraced",
+  "txt-vrpAddons-ores-desc": "Le module minerais lumineux pour Vanilla Raytraced offre une toute nouvelle atmosphère aux grottes ! Vous verrez au détour d'une grotte, une lueur bleue, celle du minerai de diamant que vous avez cherché pendant des heures !",
+
   "txt-06games": "06Games"
 }

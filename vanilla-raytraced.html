@@ -36,7 +36,7 @@
           <nav class="nav nav-masthead justify-content-center">
             <a class="nav-link" href="/" id="txt-home">Home</a>
             <a class="nav-link active" href="vanilla-raytraced" id="txt-vrp">Vanilla Raytraced</a>
-			<a class="nav-link" href="https://06games.ddns.net/" id="txt-06games">06Games</a>
+            <a class="nav-link" href="https://06games.ddns.net/" id="txt-06games">06Games</a>
             <div class="dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" id="language" data-toggle="dropdown"><i class="fas fa-language"></i></a>
               <div class="dropdown-menu">
@@ -51,17 +51,15 @@
         <div class="d-flex flex-column w-100 introduction">
           <div class="carousel slide carousel-fade fullscreen-image" data-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active"><div style="background-image: url(assets/img/vanilla-raytraced/jungle.jpg)" class="img"></div></div>
-              <div class="carousel-item"><div style="background-image: url(assets/img/vanilla-raytraced/endPortal.jpg)" class="img"></div></div>
-              <div class="carousel-item"><div style="background-image: url(assets/img/vanilla-raytraced/underwaterTemple.jpg)" class="img"></div></div>
-              <div class="carousel-item">
-                <div style="background-image: url(assets/img/vanilla-raytraced/livingRoom.jpg)" class="img"></div>
-                <div class="carousel-caption d-none d-md-block"><b>Longfield Modern Mansion</b><small>CrackedCubes</small></div>
-              </div>
-              <div class="carousel-item">
-                <div style="background-image: url(assets/img/vanilla-raytraced/bedroom.jpg)" class="img"></div>
-                <div class="carousel-caption d-none d-md-block"><b>Longfield Modern Mansion</b><small>CrackedCubes</small></div>
-              </div>
+              <div class="carousel-item active"><div style="background-image: url('assets/img/vanilla-raytraced/carousel/arch_stairs after.jpg')" class="img"></div></div>
+              <div class="carousel-item"><div style="background-image: url('assets/img/vanilla-raytraced/carousel/roof after.jpg')" class="img"></div></div>
+              <div class="carousel-item"><div style="background-image: url('assets/img/vanilla-raytraced/carousel/village_street after.jpg')" class="img"></div></div>
+              <div class="carousel-item"><div style="background-image: url('assets/img/vanilla-raytraced/carousel/village_dock after.jpg')" class="img"></div></div>
+              <div class="carousel-item"><div style="background-image: url('assets/img/vanilla-raytraced/carousel/village_water after.jpg')" class="img"></div></div>
+              <div class="carousel-item"><div style="background-image: url('assets/img/vanilla-raytraced/carousel/village_house after.jpg')" class="img"></div></div>
+              <div class="carousel-item"><div style="background-image: url('assets/img/vanilla-raytraced/carousel/village_reading_room after.jpg')" class="img"></div></div>
+              <div class="carousel-item"><div style="background-image: url('assets/img/vanilla-raytraced/carousel/ferrisWheel after.jpg')" class="img"></div></div>
+              <div class="carousel-item"><div style="background-image: url('assets/img/vanilla-raytraced/carousel/cubes after.jpg')" class="img"></div></div>
             </div>
           </div>
           <div class="text-center">
@@ -83,103 +81,102 @@
             vanilla version of Minecraft. It will therefore allow you to take advantage of the full potential of the raytracing without denaturing Minecraft.
           </p>
 
-          <div class="mb-5 text-center" style="margin: 0 auto; max-width: 900px; max-height: 500px; display: none;">
+          <div class="mb-5 text-center" style="margin: 0 auto; max-width: 900px; max-height: 500px;">
             <div class="embed-responsive embed-responsive-16by9">
               <div class="embed-responsive-item text-center text-light d-flex" style="margin: 0 auto; background: #2f2f2f">
-                <h3 style="margin: auto">Trailer</h3>
+                <iframe width="1280" height="720" src="https://www.youtube.com/embed/VMR52esnjoo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
           </div>
 
-          <div class="alert alert-warning" role="alert">
-            <i class="fas fa-exclamation-triangle"></i>
-            <span id="txt-vrp-beta">
-              This version of the pack is still in <b>early development</b>. Although it has been tested throughout its production, it is not excluded that you may
-              encounter bugs while using it.
+          <div class="alert alert-dark" role="alert">
+            <i class="fas fa-info"></i>
+            <span id="txt-vrp-issues">
+              If you encounter bugs while using this pack, please open an issue on <b><a href="https://github.com/MazeWave/Vanilla-Raytraced/issues/new/choose">Github</a></b>
             </span>
           </div>
 
           <h2 id="txt-screenshots">Screenshots</h2>
-          <div class="screenshots">
-            <div class="beer-slider" id="beer-after" data-beer-label="After">
-              <img src="assets/img/vanilla-raytraced/screenshots/bedroom-after.jpg" alt="" />
-              <div class="beer-reveal" id="beer-before" data-beer-label="Before"><img src="assets/img/vanilla-raytraced/screenshots/bedroom-before.jpg" alt="" /></div>
+          <div class="text-center">
+            <div class="beer-slider" id="beer-rtxOn" data-beer-label="With RTX">
+              <img src="assets/img/vanilla-raytraced/screenshots/sd/forest_cliff after.jpg" alt="" />
+              <div class="beer-reveal" id="beer-rtxOff" data-beer-label="Without RTX"><img src="assets/img/vanilla-raytraced/screenshots/sd/forest_cliff before.jpg" alt="" /></div>
             </div>
-            <div class="beer-slider" id="beer-after" data-beer-label="After">
-              <img src="assets/img/vanilla-raytraced/screenshots/building-after.jpg" alt="" />
-              <div class="beer-reveal" id="beer-before" data-beer-label="Before"><img src="assets/img/vanilla-raytraced/screenshots/building-before.jpg" alt="" /></div>
+            <div class="beer-slider" id="beer-rtxOn" data-beer-label="With RTX">
+              <img src="assets/img/vanilla-raytraced/screenshots/sd/forest_mushroom after.jpg" alt="" />
+              <div class="beer-reveal" id="beer-rtxOff" data-beer-label="Without RTX"><img src="assets/img/vanilla-raytraced/screenshots/sd/forest_mushroom before.jpg" alt="" /></div>
             </div>
-            <div class="beer-slider" id="beer-after" data-beer-label="After">
-              <img src="assets/img/vanilla-raytraced/screenshots/cave-after.jpg" alt="" />
-              <div class="beer-reveal" id="beer-before" data-beer-label="Before"><img src="assets/img/vanilla-raytraced/screenshots/cave-before.jpg" alt="" /></div>
+            <div class="beer-slider" id="beer-rtxOn" data-beer-label="With RTX">
+              <img src="assets/img/vanilla-raytraced/screenshots/sd/forest_portal after.jpg" alt="" />
+              <div class="beer-reveal" id="beer-rtxOff" data-beer-label="Without RTX"><img src="assets/img/vanilla-raytraced/screenshots/sd/forest_portal before.jpg" alt="" /></div>
             </div>
-            <div class="beer-slider" id="beer-after" data-beer-label="After">
-              <img src="assets/img/vanilla-raytraced/screenshots/fault-after.jpg" alt="" />
-              <div class="beer-reveal" id="beer-before" data-beer-label="Before"><img src="assets/img/vanilla-raytraced/screenshots/fault-before.jpg" alt="" /></div>
+            <div class="beer-slider" id="beer-rtxOn" data-beer-label="With RTX">
+              <img src="assets/img/vanilla-raytraced/screenshots/sd/forest_temple after.jpg" alt="" />
+              <div class="beer-reveal" id="beer-rtxOff" data-beer-label="Without RTX"><img src="assets/img/vanilla-raytraced/screenshots/sd/forest_temple before.jpg" alt="" /></div>
             </div>
-            <div class="beer-slider" id="beer-after" data-beer-label="After">
-              <img src="assets/img/vanilla-raytraced/screenshots/jungle-after.jpg" alt="" />
-              <div class="beer-reveal" id="beer-before" data-beer-label="Before"><img src="assets/img/vanilla-raytraced/screenshots/jungle-before.jpg" alt="" /></div>
+            <div class="beer-slider" id="beer-rtxOn" data-beer-label="With RTX">
+              <img src="assets/img/vanilla-raytraced/screenshots/sd/mountain_ancient after.jpg" alt="" />
+              <div class="beer-reveal" id="beer-rtxOff" data-beer-label="Without RTX"><img src="assets/img/vanilla-raytraced/screenshots/sd/mountain_ancient before.jpg" alt="" /></div>
             </div>
-            <div class="beer-slider" id="beer-after" data-beer-label="After">
-              <img src="assets/img/vanilla-raytraced/screenshots/kitchen-after.jpg" alt="" />
-              <div class="beer-reveal" id="beer-before" data-beer-label="Before"><img src="assets/img/vanilla-raytraced/screenshots/kitchen-before.jpg" alt="" /></div>
+            <div class="beer-slider" id="beer-rtxOn" data-beer-label="With RTX">
+              <img src="assets/img/vanilla-raytraced/screenshots/sd/mountain_fault after.jpg" alt="" />
+              <div class="beer-reveal" id="beer-rtxOff" data-beer-label="Without RTX"><img src="assets/img/vanilla-raytraced/screenshots/sd/mountain_fault before.jpg" alt="" /></div>
             </div>
-            <div class="beer-slider" id="beer-after" data-beer-label="After">
-              <img src="assets/img/vanilla-raytraced/screenshots/mineshaft-after.jpg" alt="" />
-              <div class="beer-reveal" id="beer-before" data-beer-label="Before"><img src="assets/img/vanilla-raytraced/screenshots/mineshaft-before.jpg" alt="" /></div>
+            <div class="beer-slider" id="beer-rtxOn" data-beer-label="With RTX">
+              <img src="assets/img/vanilla-raytraced/screenshots/sd/antique_village after.jpg" alt="" />
+              <div class="beer-reveal" id="beer-rtxOff" data-beer-label="Without RTX"><img src="assets/img/vanilla-raytraced/screenshots/sd/antique_village before.jpg" alt="" /></div>
             </div>
-            <div class="beer-slider" id="beer-after" data-beer-label="After">
-              <img src="assets/img/vanilla-raytraced/screenshots/nether-after.jpg" alt="" />
-              <div class="beer-reveal" id="beer-before" data-beer-label="Before"><img src="assets/img/vanilla-raytraced/screenshots/nether-before.jpg" alt="" /></div>
+            <div class="beer-slider" id="beer-rtxOn" data-beer-label="With RTX">
+              <img src="assets/img/vanilla-raytraced/screenshots/sd/antique_selfie after.jpg" alt="" />
+              <div class="beer-reveal" id="beer-rtxOff" data-beer-label="Without RTX"><img src="assets/img/vanilla-raytraced/screenshots/sd/antique_selfie before.jpg" alt="" /></div>
             </div>
-            <div class="beer-slider" id="beer-after" data-beer-label="After">
-              <img src="assets/img/vanilla-raytraced/screenshots/swimmingPool-after.jpg" alt="" />
-              <div class="beer-reveal" id="beer-before" data-beer-label="Before">
-                <img src="assets/img/vanilla-raytraced/screenshots/swimmingPool-before.jpg" alt="" />
-              </div>
+            <div class="beer-slider" id="beer-rtxOn" data-beer-label="With RTX">
+              <img src="assets/img/vanilla-raytraced/screenshots/sd/savanna_hill after.jpg" alt="" />
+              <div class="beer-reveal" id="beer-rtxOff" data-beer-label="Without RTX"><img src="assets/img/vanilla-raytraced/screenshots/sd/savanna_hill before.jpg" alt="" /></div>
             </div>
-            <div class="beer-slider" id="beer-after" data-beer-label="After">
-              <img src="assets/img/vanilla-raytraced/screenshots/water-after.jpg" alt="" />
-              <div class="beer-reveal" id="beer-before" data-beer-label="Before"><img src="assets/img/vanilla-raytraced/screenshots/water-before.jpg" alt="" /></div>
+            <div class="beer-slider" id="beer-rtxOn" data-beer-label="With RTX">
+              <img src="assets/img/vanilla-raytraced/screenshots/sd/savanna_rift after.jpg" alt="" />
+              <div class="beer-reveal" id="beer-rtxOff" data-beer-label="Without RTX"><img src="assets/img/vanilla-raytraced/screenshots/sd/savanna_rift before.jpg" alt="" /></div>
             </div>
-            <div class="beer-slider" id="beer-after" data-beer-label="After">
-              <img src="assets/img/vanilla-raytraced/screenshots/wedding-after.jpg" alt="" />
-              <div class="beer-reveal" id="beer-before" data-beer-label="Before"><img src="assets/img/vanilla-raytraced/screenshots/wedding-before.jpg" alt="" /></div>
+            <div class="beer-slider" id="beer-rtxOn" data-beer-label="With RTX">
+              <img src="assets/img/vanilla-raytraced/screenshots/sd/sand_hill after.jpg" alt="" />
+              <div class="beer-reveal" id="beer-rtxOff" data-beer-label="Without RTX"><img src="assets/img/vanilla-raytraced/screenshots/sd/sand_hill before.jpg" alt="" /></div>
             </div>
-            <div class="beer-slider" id="beer-after" data-beer-label="After">
-              <img src="assets/img/vanilla-raytraced/screenshots/seaLantern-after.jpg" alt="" />
-              <div class="beer-reveal" id="beer-before" data-beer-label="Before"><img src="assets/img/vanilla-raytraced/screenshots/seaLantern-before.jpg" alt="" /></div>
+            <div class="beer-slider" id="beer-rtxOn" data-beer-label="With RTX">
+              <img src="assets/img/vanilla-raytraced/screenshots/sd/sand_temple after.jpg" alt="" />
+              <div class="beer-reveal" id="beer-rtxOff" data-beer-label="Without RTX"><img src="assets/img/vanilla-raytraced/screenshots/sd/sand_temple before.jpg" alt="" /></div>
             </div>
-            <div class="beerWithCaption">
-              <div class="carousel-caption"><b>10880 Malibu Point: Tony Stark’s Mansion</b><small>CrackedCubes</small></div>
-              <div class="beer-slider" id="beer-after" data-beer-label="After">
-                <img src="assets/img/vanilla-raytraced/screenshots/skylight-after.jpg" alt="" />
-                <div class="beer-reveal" id="beer-before" data-beer-label="Before"><img src="assets/img/vanilla-raytraced/screenshots/skylight-before.jpg" alt="" /></div>
-              </div>
+            <div class="beer-slider" id="beer-rtxOn" data-beer-label="With RTX">
+              <img src="assets/img/vanilla-raytraced/screenshots/sd/wood_floor after.jpg" alt="" />
+              <div class="beer-reveal" id="beer-rtxOff" data-beer-label="Without RTX"><img src="assets/img/vanilla-raytraced/screenshots/sd/wood_floor before.jpg" alt="" /></div>
             </div>
-            <div class="beerWithCaption">
-              <div class="carousel-caption"><b>Notre Dame & Medieval City</b><small>Mateo Grgić</small></div>
-              <div class="beer-slider" id="beer-after" data-beer-label="After">
-                <img src="assets/img/vanilla-raytraced/screenshots/field-after.jpg" alt="" />
-                <div class="beer-reveal" id="beer-before" data-beer-label="Before"><img src="assets/img/vanilla-raytraced/screenshots/field-before.jpg" alt="" /></div>
-              </div>
+            <div class="beer-slider" id="beer-rtxOn" data-beer-label="With RTX">
+              <img src="assets/img/vanilla-raytraced/screenshots/sd/gift after.jpg" alt="" />
+              <div class="beer-reveal" id="beer-rtxOff" data-beer-label="Without RTX"><img src="assets/img/vanilla-raytraced/screenshots/sd/gift before.jpg" alt="" /></div>
             </div>
-            <div class="beerWithCaption">
-              <div class="carousel-caption"><b>Notre Dame & Medieval City</b><small>Mateo Grgić</small></div>
-              <div class="beer-slider" id="beer-after" data-beer-label="After">
-                <img src="assets/img/vanilla-raytraced/screenshots/notreDame-after.jpg" alt="" />
-                <div class="beer-reveal" id="beer-before" data-beer-label="Before">
-                  <img src="assets/img/vanilla-raytraced/screenshots/notreDame-before.jpg" alt="" />
-                </div>
-              </div>
+            <div class="beer-slider" id="beer-rtxOn" data-beer-label="With RTX">
+              <img src="assets/img/vanilla-raytraced/screenshots/sd/nether_basalt after.jpg" alt="" />
+              <div class="beer-reveal" id="beer-rtxOff" data-beer-label="Without RTX"><img src="assets/img/vanilla-raytraced/screenshots/sd/nether_basalt before.jpg" alt="" /></div>
             </div>
-            <div class="beerWithCaption">
-              <div class="carousel-caption"><b>Notre Dame & Medieval City</b><small>Mateo Grgić</small></div>
-              <div class="beer-slider" id="beer-after" data-beer-label="After">
-                <img src="assets/img/vanilla-raytraced/screenshots/village-after.jpg" alt="" />
-                <div class="beer-reveal" id="beer-before" data-beer-label="Before"><img src="assets/img/vanilla-raytraced/screenshots/village-before.jpg" alt="" /></div>
-              </div>
+            <div class="beer-slider" id="beer-rtxOn" data-beer-label="With RTX">
+              <img src="assets/img/vanilla-raytraced/screenshots/sd/cave_redstone after.jpg" alt="" />
+              <div class="beer-reveal" id="beer-rtxOff" data-beer-label="Without RTX"><img src="assets/img/vanilla-raytraced/screenshots/sd/cave_redstone before.jpg" alt="" /></div>
+            </div>
+            <div class="beer-slider" id="beer-rtxOn" data-beer-label="With RTX">
+              <img src="assets/img/vanilla-raytraced/screenshots/sd/water_magma after.jpg" alt="" />
+              <div class="beer-reveal" id="beer-rtxOff" data-beer-label="Without RTX"><img src="assets/img/vanilla-raytraced/screenshots/sd/water_magma before.jpg" alt="" /></div>
+            </div>
+            <div class="beer-slider" id="beer-rtxOn" data-beer-label="With RTX">
+              <img src="assets/img/vanilla-raytraced/screenshots/sd/water_temple after.jpg" alt="" />
+              <div class="beer-reveal" id="beer-rtxOff" data-beer-label="Without RTX"><img src="assets/img/vanilla-raytraced/screenshots/sd/water_temple before.jpg" alt="" /></div>
+            </div>
+            <div class="beer-slider" id="beer-rtxOn" data-beer-label="With RTX">
+              <img src="assets/img/vanilla-raytraced/screenshots/sd/tokyo_buildings after.jpg" alt="" />
+              <div class="beer-reveal" id="beer-rtxOff" data-beer-label="Without RTX"><img src="assets/img/vanilla-raytraced/screenshots/sd/tokyo_buildings before.jpg" alt="" /></div>
+            </div>
+            <div class="beer-slider" id="beer-rtxOn" data-beer-label="With RTX">
+              <img src="assets/img/vanilla-raytraced/screenshots/sd/tokyo_motorbike after.jpg" alt="" />
+              <div class="beer-reveal" id="beer-rtxOff" data-beer-label="Without RTX"><img src="assets/img/vanilla-raytraced/screenshots/sd/tokyo_motorbike before.jpg" alt="" /></div>
             </div>
           </div>
 
@@ -205,15 +202,6 @@
     </div>
   </body>
   <script>
-    $(document.getElementsByClassName("beer-slider")).each(function () {
-      new BeerSlider(this);
-    });
-
-    $("#downloadBtn").click(function (event) {
-      $.ajax("https://api.github.com/repos/MazeWave/Vanilla-Raytraced/releases/latest", { dataType: "json" }).done(function (data) {
-        window.location = data.assets[0].browser_download_url;
-      });
-      event.preventDefault();
-    });
+    $("#downloadBtn").click((event) => getLatestRelease("Vanilla-Raytraced", event));
   </script>
 </html>

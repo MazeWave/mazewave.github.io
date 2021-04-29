@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+
+    <title>MazeWave - Bloody Nether Addon for Vanilla Raytraced</title>
+    <link rel="canonical" href="https://mazewave.github.io/vanilla-raytraced-addons-nether" />
+    <meta name="description" content="Bloody Nether Addon for Vanilla Raytraced adds a unique atmosphere to this dimension."></head>
+
+    <link href="assets/css/BeerSlider.css" rel="stylesheet" />
+    <script src="assets/js/BeerSlider.js"></script>
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/fontawesome.min.css" rel="stylesheet" />
+    <link href="assets/css/twemoji-amazing.css" rel="stylesheet" />
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <style>
+      :not(.beerWithCaption) > .carousel-caption {
+        bottom: 2em;
+      }
+    </style>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/js.cookie.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </head>
+  <body>
+    <div class="mx-auto">
+      <header class="p-3 masthead mb-auto scrolled" style="color: var(--white)">
+        <div class="inner">
+          <a href="/"><h3 class="masthead-brand" id="txt-mazewave">MazeWave</h3></a>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link" href="/" id="txt-home">Home</a>
+            <a class="nav-link active" href="vanilla-raytraced" id="txt-vrp">Vanilla Raytraced</a>
+            <a class="nav-link" href="https://06games.ddns.net/" id="txt-06games">06Games</a>
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" id="language" data-toggle="dropdown"><i class="fas fa-language"></i></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="javascript:changeLanguage('english')"><i class="twa twa-flag-united-kingdom"></i>English</a>
+                <a class="dropdown-item" href="javascript:changeLanguage('french')"><i class="twa twa-flag-france"></i>Français</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <main role="main">
+        <div class="d-flex flex-column w-100 introduction">
+          <div class="carousel slide carousel-fade fullscreen-image" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active"><div style="background-image: url('assets/img/vanilla-raytraced-addons-nether/carousel/')" class="img"></div></div>
+            </div>
+          </div>
+          <div class="text-center">
+            <img src="assets/img/vanilla-raytraced-addons-nether/icon.png" href="#" class="presentation-icon" />
+            <h1 id="txt-vrpAddons-nether">Bloody Nether</h1>
+            <p class="lead" id="txt-vrpAddons-nether-title">An addon for Vanilla Raytraced</p>
+            <p class="lead" id="buttons">
+              <a href="https://github.com/MazeWave/Vanilla-Raytraced-Addons-Bloody-Nether/releases/latest" id="downloadBtn" class="btn btn-lg btn-secondary">
+                <i class="fas fa-download"></i><span id="txt-download">Download</span>
+              </a>
+              <a href="https://github.com/MazeWave/Vanilla-Raytraced-Addons-Bloody-Nether/" class="btn btn-lg btn-dark">
+                <i class="fab fa-github"></i><span id="txt-github">Github</span>
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <content class="panel d-block mb-5">
+          <p class="description" id="txt-vrpAddons-nether-desc">
+            Bloody Nether Addon for Vanilla Raytraced adds a unique atmosphere to this dimension.
+          </p>
+
+          <h2 id="txt-screenshots">Screenshots</h2>
+          <div class="text-center">
+            <div class="beer-slider" id="beer-addonOn" data-beer-label="With addon">
+              <img src="assets/img/vanilla-raytraced-addons-nether/screenshots/sd/fortress after.jpg" alt="" />
+              <div class="beer-reveal" id="beer-addonOff" data-beer-label="Without addon"><img src="assets/img/vanilla-raytraced-addons-nether/screenshots/sd/fortress before.jpg" alt="" /></div>
+            </div>
+            <div class="beer-slider" id="beer-addonOn" data-beer-label="With addon">
+              <img src="assets/img/vanilla-raytraced-addons-nether/screenshots/sd/wastes_fortress after.jpg" alt="" />
+              <div class="beer-reveal" id="beer-addonOff" data-beer-label="Without addon"><img src="assets/img/vanilla-raytraced-addons-nether/screenshots/sd/wastes_fortress before.jpg" alt="" /></div>
+            </div>
+            <div class="beer-slider" id="beer-addonOn" data-beer-label="With addon">
+              <img src="assets/img/vanilla-raytraced-addons-nether/screenshots/sd/wastes_portal after.jpg" alt="" />
+              <div class="beer-reveal" id="beer-addonOff" data-beer-label="Without addon"><img src="assets/img/vanilla-raytraced-addons-nether/screenshots/sd/wastes_portal before.jpg" alt="" /></div>
+            </div>
+            <div class="beer-slider" id="beer-addonOn" data-beer-label="With addon">
+              <img src="assets/img/vanilla-raytraced-addons-nether/screenshots/sd/crimson after.jpg" alt="" />
+              <div class="beer-reveal" id="beer-addonOff" data-beer-label="Without addon"><img src="assets/img/vanilla-raytraced-addons-nether/screenshots/sd/crimson before.jpg" alt="" /></div>
+            </div>
+            <div class="beer-slider" id="beer-addonOn" data-beer-label="With addon">
+              <img src="assets/img/vanilla-raytraced-addons-nether/screenshots/sd/warped after.jpg" alt="" />
+              <div class="beer-reveal" id="beer-addonOff" data-beer-label="Without addon"><img src="assets/img/vanilla-raytraced-addons-nether/screenshots/sd/warped before.jpg" alt="" /></div>
+            </div>
+            <div class="beer-slider" id="beer-addonOn" data-beer-label="With addon">
+              <img src="assets/img/vanilla-raytraced-addons-nether/screenshots/sd/basalt after.jpg" alt="" />
+              <div class="beer-reveal" id="beer-addonOff" data-beer-label="Without addon"><img src="assets/img/vanilla-raytraced-addons-nether/screenshots/sd/basalt before.jpg" alt="" /></div>
+            </div>
+          </div>
+        </content>
+      </main>
+
+      <footer class="mt-auto text-center">
+        <div class="inner">
+          <p><span id="txt-credit">This website was made by</span> <a href="https://github.com/06Games">Evan Galli</a></p>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script>
+    $(document.getElementsByClassName("beer-slider")).each(function () {
+      new BeerSlider(this);
+    });
+
+    $("#downloadBtn").click((event) => getLatestRelease("Vanilla-Raytraced-Addons-Bloody-Nether", event));
+  </script>
+</html>

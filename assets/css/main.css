@@ -33,10 +33,23 @@ code {
   background-color: #003773;
   border-color: #003773;
 }
+.btn-info {
+  background-color: #18769b;
+  border-color: #177397;
+}
+.btn-info:hover {
+  background-color: #166e91;
+  border-color: #166e91;
+}
 .alert-warning {
   color: #fbebbc;
   background-color: #b99015;
   border-color: #b38b15;
+}
+.alert-dark {
+    color: #e6e6e6;
+    background-color: #5e5e5e;
+    border-color: #555;
 }
 .dropdown-menu {
   background-color: #0007;
